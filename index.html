@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="./img/1_hero/PNG/sakura_logo.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sakura Ramen</title>
+
+
+
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			margin: 0px;
+			padding: 0%;
+
+		}
+
+		.h1-headline {
+			font-family: "Raleway", sans-serif;
+			font-weight: bold;
+			font-size: 96px;
+			margin: 0;
+
+		}
+
+		.h2-headline {
+			color: #9F0908;
+			font-family: "Raleway", sans-serif;
+			font-weight: bold;
+			font-size: 80px
+		}
+
+		.h3-headline {
+			font-family: "Economica", sans-serif;
+			font-weight: bold;
+			font-size: 56px;
+
+		}
+
+		a {
+			word-spacing: 10px;
+			text-decoration: none;
+			color: white
+		}
+
+
+		.body-menu {
+			font-family: "Raleway", sans-serif;
+			font-weight: normal;
+			font-size: 24px
+		}
+
+		#hero-container {
+			background-image: url(./img/1_hero/JPG/hero_bg.jpg);
+			background-size: cover;
+			background-position: bottom;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100vh;
+			color: white;
+			gap: 100px;
+
+		}
+
+		.hero-logo {
+			
+			width: 64px;
+			height: 64px;
+
+		}
+
+		.menu-seq {
+			display: flex;
+   			align-items: center;
+ 			justify-content: space-around;
+  		    position: absolute;
+  		    top: 0;
+   		    left: 0;
+  		    right: 0;
+  		    padding: 32px;
+		}
+
+		.menu-let {
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			align-items: center;
+			top: 50px;
+			left: 0;
+			right: 170px;
+			height: 112px;
+			font-weight: normal;
+			font-size: 24px;
+			gap: 50px;
+		}
+
+		.menu-let a:hover {
+			background-color: #f13c3cef;
+		}
+
+
+		.button {
+			display: flex;
+			align-items: center;
+			background-color: #9F0908;
+			border: 2px solid white;
+			border-radius: 10px;
+			padding: 10px;
+			gap: 10px;
+		}
+
+		.headline {
+			display: flex;
+			justify-content: center;
+			padding-top: 200px;
+		}
+
+
+
+		.headline-let2 {
+			display: flex;
+			justify-content: center;
+
+		}
+
+
+
+		.order-headline-let {
+			display: flex;
+			justify-content: center;
+		}
+
+		.pick-container {
+			display: flex;
+			justify-content: space-around;
+			padding-bottom: 120px;
+		}
+
+		.pick {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+
+		.pick-img {
+			width: 128px;
+		}
+
+
+		.pick-let {
+			text-align: center;
+			margin: 0px;
+
+		}
+
+		#menu-container {
+			background-image: url(./img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 120px;
+		}
+
+		.menu-headline-let {
+			display: flex;
+			justify-content: center;
+			margin-top: 120px;
+			margin-bottom: 0px;
+		}
+
+		.menu-card-container {
+			display: flex;
+			flex-direction: column;
+			margin-top: 64px;
+
+		}
+
+
+		.food {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			gap: 80px;
+			margin-bottom: 0px;
+
+		}
+
+		.food2 {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			width: 100%;
+			gap: 80px;
+			margin-top: 56px;
+			margin-bottom: 56px;
+
+
+
+		}
+
+		.food-img {
+			aspect-ratio: 1 / 1;
+           width: 40%;
+		   max-width: 400px;
+		   height: auto;
+           object-fit: cover;
+		}
+
+		.table-headline {
+			color: black;
+
+		}
+
+		table {
+			color: #675E54;
+			font-family: "Raleway", sans-serif;
+			font-weight: bold;
+			font-size: 32px;
+			margin-top: 0px;
+
+		}
+
+		caption {
+			text-align: left;
+			margin-bottom: 16px;
+		}
+
+
+
+		td:last-child {
+			padding-left: 200px;
+		}
+
+	
+
+		.contact-headline {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.contact-headline-let {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 0px;
+
+		}
+
+		.anschrift {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-height: 34px;
+			text-align: center;
+
+		}
+
+		.marker {
+			width: 40px;
+			height: 40px;
+
+		}
+
+		.googlemaps {
+			display: flex;
+			width: 100%;
+		    padding-top: 64px;
+
+		}
+
+		.footer {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			height: 120px;
+			width: 100%;
+			background-color: #0a141e;
+			
+		}
+
+		.foto-logo {
+			height: 44px;
+
+		}
+
+		.icon {
+			width: 40px;
+			height: 40px;
+
+		}
+
+		.social-icon {
+			display: flex;
+			gap: 16px;
+		}
+
+		@media(max-width: 1000px){
+
+			.menu-seq-mobile{
+				display: none
+			}
+
+			.menu-seq{
+				display: flex;
+				gap: 40px;
+			}
+
+			.h1-headline{
+				font-size: 50px;
+			}	
+
+			td:last-child{
+				padding-left: 20px;
+			}
+
+			.food2{
+				display: flex;
+				flex-direction: row;
+			}
+			
+
+			
+		}
+
+		@media(max-width: 700px){
+
+			.pick-container {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			}
+
+			.h2-headline{
+				font-size: 50px;
+			}
+
+			.h3-headline{
+				font-size: 40px;
+			}
+
+			table{
+				font-size: 16px;
+			}
+
+			
+
+		}
+
+
+
+		
+	</style>
+
+	<!--  Import Schirftarten  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+	<div id="hero-container">
+
+		
+
+		<div class="menu-seq">
+			<img class="hero-logo" src="./img/1_hero/PNG/sakura_logo.png">
+			<div class="menu-let body-menu">
+				<a class="menu-seq-mobile" href="#card">MENU</a>
+				<a class="menu-seq-mobile" href="#location">LOCATIONS</a>
+				<a class="menu-seq-mobile" href="#">ABOUT</a>
+				<a href="tel:017654564534" class="button">
+					<img class="tele" src="./img/1_hero/SVG/phone.svg">
+					017654564534
+				</a>
+			</div>
+		</div>
+
+		<div class="headline">
+			<div class="headline-let">
+				<h1 class="h1-headline">SAKURA RAMEN</h1>
+				<h3 class="headline-let2 body-menu">THE BEST RAMEN IN TOWN</h3>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+	<div id="order-container">
+
+		
+		<h2 class="order-headline-let h2-headline">HOW TO ORDER</h2>
+		
+
+		<div class="pick-container">
+			<div class="pick">
+				<img class="pick-img" src="./img/2_section_how_to_order/PNG/noodle.png">
+				<h3 class="pick-let h3-headline">Pick your<br> noodle</h3>
+
+				
+			</div>
+
+
+			<div class="pick">
+				<img class="pick-img" src="./img/2_section_how_to_order/PNG/broth.png">			
+				<h3 class="pick-let h3-headline">Pick your<br> broth</h3>
+
+				
+			</div>
+
+			<div class="pick">
+				<img class="pick-img" src="./img/2_section_how_to_order/PNG/egg.png">
+				<h3 class="pick-let h3-headline">Pick your<br> toppings</h3>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="menu-container">
+
+		
+		<h2 class="menu-headline-let h2-headline">OUR MENU</h2>
+		
+
+		<div class="menu-card-container">
+			<div class="food">
+				<img class="food-img" src="./img/3_section_our_menu/Png/R1.png">
+			
+					<table>
+						<caption class="table-headline h3-headline">Tonkotsu Ramen</caption>
+						<tr>
+							<td>CHICKEN</td>
+							<td>11,95€</td>
+						</tr>
+						<tr>
+							<td>BEEF</td>
+							<td>12,95€</td>
+						</tr>
+						<tr>
+							<td>SHRIMP</td>
+							<td>13,95€</td>
+						</tr>
+					</table>
+
+			
+
+
+			</div>
+
+			<div class="food2">
+				<img class="food-img" src="./img/3_section_our_menu/Png/R2.png">
+					<table>
+						<caption class="table-headline h3-headline">Spicy Miso Ramen</caption>
+						<tr>
+							<td>CHICKEN</td>
+							<td>11,95€</td>
+						</tr>
+						<tr>
+							<td>BEEF</td>
+							<td>12,95€</td>
+						</tr>
+						<tr>
+							<td>SHRIMP</td>
+							<td>13,95€</td>
+						</tr>
+					</table>
+
+				
+
+
+			</div>
+
+			<div class="food">
+				<img class="food-img" src="./img/3_section_our_menu/Png/R3.png">
+				
+					<table>
+						<caption class="table-headline h3-headline">Shio Ramen</caption>
+						<tr>
+							<td>CHICKEN</td>
+							<td>11,95€</td>
+						</tr>
+						<tr>
+							<td>BEEF</td>
+							<td>12,95€</td>
+						</tr>
+						<tr>
+							<td>SHRIMP</td>
+							<td>13,95€</td>
+						</tr>
+					</table>
+
+
+
+			</div>
+
+
+
+
+
+
+		</div>
+
+	</div>
+
+	<div class="contact-container">
+
+			<h2 class="contact-headline-let h2-headline" id="location">FIND US AT</h2>
+			<div class="anschrift">
+				<img class="marker" src="./img/4_section_find_us_at/PNG/map_marker.png">
+				<h5 class="body-menu"> Kapuzinerstraße 31, München, 80337</h5>
+			</div>
+		
+
+
+		<iframe class="googlemaps"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.4701904469557!2d11.561263446462684!3d48.12558083198187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44cf7e4d5f%3A0x55a7bd29a73e9161!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1771061867507!5m2!1sde!2sde"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+
+
+	</div>
+
+	<div class="footer">
+		<img class="foto-logo" src="img/5_section_footer/PNG/sakura_ramen_logo_and_text.png">
+
+
+
+		<div class="social-icon">
+			<a href="https://www.tripadvisor.de/" target="_blank">
+					<img class="icon" src="img/5_section_footer/PNG/tripadvisor_logo.png">
+			</a>
+			<a href="https://www.facebook.com/?locale=de_DE" target="_blank">
+					<img class="icon" src="img/5_section_footer/PNG/facebook_logo.png">
+			</a>
+			<a href="https://www.instagram.com/" target="_blank">
+					<img class="icon" src="img/5_section_footer/PNG/instagrram_logo.png">
+			</a>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+</body>
